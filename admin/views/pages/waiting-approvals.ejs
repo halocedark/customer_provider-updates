@@ -1,0 +1,45 @@
+<div class="container-fluid" id="waitingApprovalsContainer">
+	<div class="wrapper wrapper-p-2">
+		<h1 class="title-medium">حسابات بانتظار الموافقة</h1>
+		<p class="desc">حسابات التي اتمت التسجيل بانتظار الموافقة.</p>
+	</div>
+	<div class="inner-wrapper wrapper-p-2 mt-4">
+		<div id="pagination" class="flex flex-center my-3"></div>
+		<div class="table-nav">
+			<div class="form-group mb-2">
+				<div class="btn-group btn-group-sm">
+					<button class="btn btn-danger" id="deleteSelectedBTN">حذف</button>
+					<button class="btn btn-success" id="approveSelectedBTN">قبول</button>
+				</div>
+			</div>
+			<div class="form-group">
+				<input type="text" class="input-text input-text-outline" id="searchInput" placeholder="بحث...">
+			</div>
+		</div>
+		<div class="table-div">
+			<table class="table table-stripped table-hover" id="tableElement">
+				<thead>
+					<th id="selectAllBTN">تحديد الكل</th>
+					<th>اسم</th>
+					<th>الهاتف</th>
+					<th>الولاية</th>
+					<th>البلدية</th>
+					<th>العنوان</th>
+					<th>سجل في</th>
+				</thead>
+				<tbody>
+					<!--
+					<tr>
+						<td>
+							<input type="checkbox" class="form-check-input" data-role="CHECK" data-deviceid>
+						</td>
+						<td>name</td>
+						<td>state</td>
+						<td>date</td>
+					</tr>
+					-->
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

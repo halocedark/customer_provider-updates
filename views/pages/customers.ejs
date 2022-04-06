@@ -1,0 +1,112 @@
+<div class="container-fluid" id="customersContainer">
+	<div class="wrapper wrapper-p-2">
+		<h1 class="title-medium"><%= UI_DISPLAY_LANG.views.pages.customers.sectionTitle %></h1>
+	</div>
+	<div class="inner-wrapper mt-4 wrapper-p-2" id="addWrapper">
+		<div id="messageBox" class="alert alert-success mb-2" style="display: none;"></div>
+		<form action="#" id="addForm">
+			<div class="form-group mb-2">
+				<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.customers.form01.label01 %></label>
+				<input type="text" class="input-text input-text-outline" id="afcustomerNameInput">
+			</div>
+			<div class="form-group mb-2">
+				<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.customers.form01.label02 %></label>
+				<input type="text" class="input-text input-text-outline" id="afcustomerCCPInput">
+			</div>
+			<div class="form-group mb-2">
+				<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.customers.form01.label05 %></label>
+				<input type="date" class="input-text input-text-outline" id="afcustomerDateBirthInput">
+			</div>
+			<div class="form-group mb-2">
+				<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.customers.form01.label03 %></label>
+				<input type="number" step="any" class="input-text" id="afcustomerMonthlyDeductionAmountInput">
+			</div>
+			<div class="form-group mb-2">
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="afisDealAcceptedCheck" checked>
+					<label class="form-check-label" for="afisDealAcceptedCheck">
+						<%= UI_DISPLAY_LANG.views.pages.customers.form01.label04 %>
+					</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="btn-group btn-group-sm">
+					<button class="btn btn-primary" id="addBTN">
+						<%= UI_DISPLAY_LANG.views.pages.customers.form01.submitBTN01 %>
+					</button>
+					<button class="btn btn-dark" id="addToBlackListBTN">
+						<%= UI_DISPLAY_LANG.views.pages.customers.form01.submitBTN02 %>
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="inner-wrapper mt-4 wrapper-p-2">
+		<h1 class="title mb-3"><%= UI_DISPLAY_LANG.views.pages.customers.title01 %></h1>
+		<div class="table-nav">
+			<div class="btn-group btn-group-sm">
+				<button class="btn btn-danger" id="deleteSelectedBTN"><%= UI_DISPLAY_LANG.views.pages.customers.btn01 %></button>
+			</div>
+			<div class="row gx-2 gy-2 mt-2">
+				<div class="col-md-12">
+					<div class="form-group mt-2">
+						<input type="text" class="input-text input-text-outline" id="searchInput" placeholder="<%= UI_DISPLAY_LANG.views.pages.customers.inputPlaceholder01 %>">
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="form-group mb-2">
+						<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.customers.label01 %></label>
+						<input type="date" class="input-text" id="searchFromDateInput">
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="form-group mb-2">
+						<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.customers.label02 %></label>
+						<input type="date" class="input-text" id="searchToDateInput">
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="form-group">
+						<button class="btn btn-primary btn-sm" id="searchBTN"><%= UI_DISPLAY_LANG.views.pages.customers.btn02 %></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="table-div" style="display: none;" id="tableWrapper">
+			<div id="pagination" class="flex flex-center my-3"></div>
+			<table class="table table-stripped" id="tableElement">
+				<thead>
+					<th id="selectAllBTN"><%= UI_DISPLAY_LANG.views.pages.customers.table01.th01 %></th>
+					<th><%= UI_DISPLAY_LANG.views.pages.customers.table01.th02 %></th>
+					<th><%= UI_DISPLAY_LANG.views.pages.customers.table01.th03 %></th>
+					<th><%= UI_DISPLAY_LANG.views.pages.customers.table01.th04 %></th>
+					<th><%= UI_DISPLAY_LANG.views.pages.customers.table01.th05 %></th>
+					<th><%= UI_DISPLAY_LANG.views.pages.customers.table01.th06 %></th>
+					<th><%= UI_DISPLAY_LANG.views.pages.customers.table01.th07 %></th>
+					<th><%= UI_DISPLAY_LANG.views.pages.customers.table01.th09 %></th>
+					<th><%= UI_DISPLAY_LANG.views.pages.customers.table01.th08 %></th>
+				</thead>
+				<tbody>
+					<!--
+					<tr>
+						<td>
+							<input type="checkbox" class="form-check-input" data-role="CHECK" data-dealid="">
+						</td>
+						<td>name</td>
+						<td>ccp</td>
+						<td>deduction</td>
+						<td>status</td>
+						<td>provider_address</td>
+						<td>date</td>
+						<td>
+							<div class="btn-group btn-group-sm">
+								<button class="btn btn-primary" data-role="SELECT" data-customerid=""></button>
+							</div>
+						</td>
+					</tr>
+					-->
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

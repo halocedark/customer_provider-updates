@@ -1,0 +1,80 @@
+<div class="container-fluid" id="providerTrialsContainer">
+	<div class="wrapper wrapper-p-2">
+		<h1 class="title-medium">الفترات الجريبية</h1>
+		<p class="desc">الحسابات التي لديها فترة تجريبية لاستخدام البرنامج.</p>
+	</div>
+	<div class="inner-wrapper wrapper-p-2 mt-4">
+		<div id="providersDiv">
+			<div id="pagination" class="flex flex-center my-3"></div>
+			<div class="table-nav">
+				<input type="text" class="input-text input-text-outline" id="searchInput" placeholder="بحث...">
+			</div>
+			<div class="table-div">
+				<form action="#" id="addForm">
+					<div class="form-group mb-2">
+						<label for="" class="form-label">حدد الحساب</label>
+						<ul class="utable separate-rows" id="tableElement">
+							<div class="thead">
+								<li class="td">التحديد</li>
+								<li class="td">الاسم</li>
+								<li class="td">الهاتف</li>
+							</div>
+							<div class="tbody">
+								<!--
+								<div class="tr">
+									<li class="td">
+										<input type="checkbox" class="form-check-input" data-role="CHECK" data-providerid="">
+									</li>
+									<li class="td">
+										name
+									</li>
+								</div>
+								-->
+							</div>
+						</ul>
+					</div>
+					<div class="form-group mb-2">
+						<label for="" class="form-label">تاريخ نهاية الفترة التجريبية</label>
+						<input type="date" class="input-text input-text-outline" id="trialStartInput">
+					</div>
+					<div class="form-group">
+						<input type="submit" class="btn btn-primary btn-sm" value="اظافة فترة تجريبية">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="pagination2" class="flex flex-center my-3"></div>
+		<div class="table-nav">
+			<div class="form-group mb-2">
+				<div class="btn-group btn-group-sm">
+					<button class="btn btn-danger" id="deleteSelectedBTN">حذف</button>
+				</div>
+			</div>
+			<div class="form-group">
+				<input type="text" class="input-text input-text-outline" id="searchInput2" placeholder="بحث...">
+			</div>
+		</div>
+		<div class="table-div">
+			<ul class="utable separate-rows" id="tableElement2">
+				<div class="thead">
+					<li class="td">التحديد</li>
+					<li class="td">الاسم</li>
+					<li class="td">الهاتف</li>
+					<li class="td">الفترة التجريبية تنتهي في</li>
+				</div>
+				<div class="tbody">
+					<!--
+					<div class="tr">
+						<li class="td">
+							<input type="checkbox" class="form-check-input" data-role="CHECK" data-providerid="">
+						</li>
+						<li class="td">name</li>
+						<li class="td">phone</li>
+						<li class="td">date</li>
+					</div>
+					-->
+				</div>
+			</ul>
+		</div>
+	</div>
+</div>

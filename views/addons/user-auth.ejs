@@ -1,0 +1,57 @@
+<div class="user-auth-container" id="userAuthContainer">
+	<div class="container app-block" style="max-width: 650px;">
+
+		<div id="signupWrapper" style="display: none;">
+			<h1 class="title mb-3"><%= UI_DISPLAY_LANG.views.addons.userAuth.title01 %></h1>
+			<form action="#" id="signupForm">
+				<div class="form-group mb-2">
+					<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.addons.userAuth.form01.label01 %></label>
+					<input type="text" class="input-text input-text-outline" id="sfName">
+				</div>
+				<div class="form-group mb-2">
+					<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.addons.userAuth.form01.label02 %></label>
+					<input type="text" class="input-text input-text-outline" id="sfPhone">
+				</div>
+				<div class="form-group mb-2">
+					<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.addons.userAuth.form01.label03 %></label>
+					<input type="password" class="input-text input-text-outline" id="sfPassword">
+				</div>
+				<div class="form-group mb-2">
+					<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.addons.userAuth.form01.label04 %></label>
+					<select name="" class="input-text" id="sfState">
+						
+					</select>
+				</div>
+				<div class="form-group mb-2">
+					<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.addons.userAuth.form01.label05 %></label>
+					<input type="text" class="input-text input-text-outline" id="sfCity">
+				</div>
+				<div class="form-group mb-2">
+					<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.addons.userAuth.form01.label06 %></label>
+					<input type="text" class="input-text input-text-outline" id="sfAddress">
+				</div>
+				<div class="form-group">
+					<input type="submit" class="btn btn-primary btn-sm" value="<%= UI_DISPLAY_LANG.views.addons.userAuth.form01.submitBTN01 %>">
+					<a href="#" class="form-link" id="switchToSigninForm"><%= UI_DISPLAY_LANG.views.addons.userAuth.form01.formText01 %></a>
+				</div>
+			</form>
+		</div>
+		<div id="signinWrapper">
+			<h1 class="title mb-3"><%= UI_DISPLAY_LANG.views.addons.userAuth.title02 %></h1>
+			<form action="#" id="signinForm">
+				<div class="form-group mb-2">
+					<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.addons.userAuth.form02.label01 %></label>
+					<input type="text" class="input-text input-text-outline" id="sfPhone">
+				</div>
+				<div class="form-group mb-2">
+					<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.addons.userAuth.form02.label02 %></label>
+					<input type="password" class="input-text input-text-outline" id="sfPassword">
+				</div>
+				<div class="form-group">
+					<input type="submit" class="btn btn-primary btn-sm" value="<%= UI_DISPLAY_LANG.views.addons.userAuth.form02.submitBTN01 %>">
+					<a href="#" class="form-link" id="switchToSignupForm"><%= UI_DISPLAY_LANG.views.addons.userAuth.form02.formText01 %></a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
